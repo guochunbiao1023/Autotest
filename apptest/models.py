@@ -17,4 +17,9 @@ class Appcase(models.Model):
 class Appcasestep(models.Model):
     appcase = models.ForeignKey('appcase.Appcase',on_delete=models.CASCADE) #关联接口ID
     appcasestep = models.CharField('测试步骤',max_length=200)#测试步骤
-    apptestobjname = models.
+    apptestobjname = models.CharField('测试对象名称描述',max_length=200)#测试对象名称描述
+
+    appevelement = models.CharField('定位方式',max_length=200)#定位方式
+    
+    
+    
